@@ -1,23 +1,3 @@
-/**
- * @mainpage BMP Image Processing with Parallelism
- *
- # summary of the time taken in my project
- *
- * Grayscale conversion took 27 ms
- *
- * Memory allocated for loading the image: 2457600 bytes (2400 KB)
- *
- * Clockwise rotation took 23 ms
- *
- * Counterclockwise rotation took 26 ms
- *
- * Gaussian filtering took 282 ms
- *
- * Debug pixel value (before filter): 188, after filter: 187
- *
- */
-
-
 
 # 🖼️ Parallel BMP Image Processor
 
@@ -39,6 +19,40 @@ This project implements a multithreaded C++ program for processing BMP (Bitmap) 
 The goal is to reduce computation time for large images using `std::thread` and modern C++17 features.
 
 ---
+
+## 📚 Doxygen Documentation
+
+To generate the documentation:
+
+```bash
+doxygen Doxyfile
+xdg-open docs/html/index.html
+```
+
+- HTML output is stored in `docs/html/index.html`  
+- Uses `include/` and `src/` as input directories  
+
+---
+
+## 🛠️ Build Instructions
+
+### 1. Requirements
+
+- C++17 compiler (e.g., `g++`)  
+- `make`  
+- `doxygen` (for documentation)  
+
+### 2. Build & Run
+
+```bash
+make         # Compile
+./lab        # Run the program
+doxygen Doxyfile && xdg-open docs/html/index.html   # Generate Doxygen docs
+make clean   # Clean build artifacts
+```
+
+---
+
 
 ## 🏗️ Project Structure
 
@@ -166,38 +180,6 @@ A **GitHub Actions** workflow (`.github/workflows/ci.yml`) is included to:
 
 ---
 
-## 📚 Doxygen Documentation
-
-To generate the documentation:
-
-```bash
-doxygen Doxyfile
-xdg-open docs/html/index.html
-```
-
-- HTML output is stored in `docs/html/index.html`  
-- Uses `include/` and `src/` as input directories  
-
----
-
-## 🛠️ Build Instructions
-
-### 1. Requirements
-
-- C++17 compiler (e.g., `g++`)  
-- `make`  
-- `doxygen` (for documentation)  
-
-### 2. Build & Run
-
-```bash
-make         # Compile
-./lab        # Run the program
-doxygen Doxyfile && xdg-open docs/html/index.html   # Generate Doxygen docs
-make clean   # Clean build artifacts
-```
-
----
 
 ## ✅ Summary
 

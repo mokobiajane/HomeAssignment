@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filtering_0',['✅ Gaussian Blur Filtering',['../index.html#autotoc_md14',1,'']]]
+  ['7_20doxygen_20setup_0',['7. Doxygen Setup',['../index.html#autotoc_md17',1,'']]]
 ];

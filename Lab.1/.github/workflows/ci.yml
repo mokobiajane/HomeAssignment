@@ -2,9 +2,13 @@ name: C++ CI
 
 on:
   push:
-    branches: [ main ]
+    branches: 
+        - main
+        - feature/parrarelization
   pull_request:
-    branches: [ main ]
+    branches: 
+        - main
+        - feature/parrarelization
 
 jobs:
   build-and-run:

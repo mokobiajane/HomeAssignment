@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "12abcdfgilmoprstuw⚙✅🏗📁📋📚🖼🛠🧪🧼",
+  0: "12345678abcdfilmoprstw📑📘",
   1: "b",
   2: "mr",
   3: "aclmprs",

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['of_20the_20time_20taken_20in_20my_20project_0',['summary of the time taken in my project',['../index.html#autotoc_md0',1,'']]],
-  ['output_1',['📁 Input and Output',['../index.html#autotoc_md18',1,'']]],
-  ['overview_2',['📋 Overview',['../index.html#autotoc_md3',1,'']]]
+  ['documentation_0',['6. Code Documentation',['../index.html#autotoc_md15',1,'']]],
+  ['doxygen_20setup_1',['7. Doxygen Setup',['../index.html#autotoc_md17',1,'']]]
 ];
