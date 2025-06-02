@@ -44,6 +44,7 @@ xdg-open docs/html/index.html
 
 ### 2. Build & Run
 
+
 ```bash
 make         # Compile
 ./lab        # Run the program
