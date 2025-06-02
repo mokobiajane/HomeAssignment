@@ -1,0 +1,37 @@
+name: C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up C++ build environment
+      run: |
+        sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Create images folder and placeholder input image
+      run: |
+        mkdir -p images
+        dd if=/dev/zero bs=1 count=54 of=images/input_image.bmp # fake 54-byte header
+        echo "Patching header..." # optional placeholder for actual header patching
+
+    - name: Build project
+      run: |
+        make
+
+    - name: Run the program
+      run: |
+        ./lab
+
+    - name: clean program
+      run: |
+        make clean   
